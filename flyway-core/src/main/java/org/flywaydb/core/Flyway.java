@@ -325,14 +325,6 @@ public class Flyway implements FlywayConfiguration {
      */
     private String installedBy;
 
-
-
-
-
-
-
-
-
     /**
      * Creates a new instance of Flyway. This is your starting point.
      */
@@ -516,36 +508,6 @@ public class Flyway implements FlywayConfiguration {
     public boolean isGroup() {
         return group;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /**
      * Whether to group all pending migrations together in the same transaction when applying them (only recommended for databases with support for DDL transactions).

@@ -14,7 +14,7 @@
 -- limitations under the License.
 --
 
-CREATE TABLE `${schema}`.`${table}` (
+CREATE TABLE `${schema}`.`${table}` ON CLUSTER `${cluster}`(
     installed_rank Int32,
     version Nullable(String),
     description String,
@@ -25,4 +25,4 @@ CREATE TABLE `${schema}`.`${table}` (
     installed_on DateTime,
     execution_time Int32,
     success UInt8
-) ENGINE = TinyLog;
+) ENGINE = Log;
